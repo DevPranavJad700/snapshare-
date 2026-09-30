@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>SnapShare — Share Your World</title>
+    <meta name="description" content="SnapShare is a modern photo sharing platform. Upload beautiful photos with filters, add captions and tags, and discover stunning images from the community." />
+    <meta name="keywords"    content="photo sharing, social media, photography, filters, upload photos" />
+    <meta name="author"      content="SnapShare" />
+    <meta name="theme-color" content="#a855f7" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"       content="SnapShare — Share Your World" />
+    <meta property="og:description" content="A modern photo sharing platform with image filters, tags, and social features." />
+    <meta property="og:type"        content="website" />
+    <meta property="og:image"       content="/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="SnapShare" />
+    <meta name="twitter:description" content="Share beautiful photos with the world." />
+
+    <!-- PWA -->
+    <meta name="mobile-web-app-capable"       content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title"   content="SnapShare" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      (function() {
+        const t = localStorage.getItem('snap_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
